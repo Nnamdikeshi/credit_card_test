@@ -28,13 +28,11 @@ public class CreditCard {
     public static boolean isValidCreditCard(String cc) {
 
         //TODO Replace with your code to process the credit card number, and determine if it is valid.
-        //TODO Make sure all the tests pass!
-
-        return false;
-
-    }
-
-
-
+        if (ccNumber.startsWith("4") && ccNumber.length() == 16 ) {
+            return true;
+        }
+        else {
+            return false;
+        }
 
 }
